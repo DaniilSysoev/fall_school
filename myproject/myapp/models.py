@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Item(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=200)
     description = models.TextField()
     price = models.IntegerField()
     is_active = models.BooleanField(default=True)
